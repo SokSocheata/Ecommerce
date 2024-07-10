@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saan Taa Backpacks</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=80&id=RDWRpkx9hYbO&format=png" type="image/x-icon">
+  <!--Box icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+  <!-- style css-->
+  <link rel="stylesheet" href="./e.css">
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <!--Nav-->
+    <div class="nav container">
+      <a href="#" class="logo" style="color: white; font-size: large;"><b><span
+            style="color: rgb(239, 82, 218); font-size: large;">SannTaa</span><span></span></b></a>
+      <a href="#slide" style="color: white; font-size: large;"><b>HOME</b></a>
+      <a href="#items" style="color: white; font-size: large;"><b>ITEMS</b></a>
+      <a href="#contact_us" style="color: white; font-size: large;"><b>CONTACT US</b></a>
+      <!--Cart icons-->
+      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+      <!--CArt-->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!--Content-->
+        <div class="cart-content">
+          <!--Test box-->
+        </div>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!--Buy button-->
+        <button type="button" class="btn-buy">Buy now</button>
+        <!--Cart close-->
+        <i class='bx bxs-x-square' id="cart-close"></i>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!--Creat Slide-->
+  <main>
+    <div class="w3-content w3-section" id="slide" style="padding: 5%;">
+      <h2 style="text-align: center;  font-size: 60px; color: rgb(173, 21, 97);"><span
+          style="color: rgb(106, 18, 78); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">WECOME</span>
+        <span
+          style="color: rgb(0, 5, 100); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">TO</span>
+        <span style="color: rgb(90, 4, 4); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">SAAN
+        </span>
+        <span style="color: rgb(90, 4, 4); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">TAA
+        </span>
+        <span
+          style="color: rgb(71, 72, 8); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">BACKPACKS</span>
+      </h2>
+      <img class="mySlides" src="./image/b1.jpg" style="width:100%" height="650px">
+      <img class="mySlides" src="image/b10.jpg" style="width:100%" height="650px">
+      <img class="mySlides" src="image/b3.jpg" style="width:100%" height="650px">
+      <img class="mySlides" src="./image/b7.png" style="width:100%" height="650px">
+      <img class="mySlides" src="image/b5.jpg" style="width:100%" height="650px">
+      <img class="mySlides" src="image/b6.jpg" style="width:100%" height="650px">
+      <img class="mySlides" src="image/b8.jpg" style="width:100%" height="650px">
+    </div>
+
+    <!--Creat style fo slde-->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- End Creat style fo slde-->
+  </main>
+
+  <!-- List of table content-->
+  <!--SHOP SECTION-->
+  <section class="shop container" id="items" >
+    <h2 class="section-title"
+      style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px; color: rgb(66, 6, 77); ">
+      Shop Products</h2>
+    <!--Content-->
+    <div class="shop-content">
+      <!--Box1-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p2.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Osprey</h2>
+        <span class="product-price">$15.0</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box2-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p5.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">The North Face</h2>
+        <span class="product-price">$15.0</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box3-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p6.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Herschel</h2>
+        <span class="product-price">$15.5</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <!--Box4-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p8.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">JanSport</h2>
+        <span class="product-price">$16.0</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box5-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p11.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Patagonia</h2>
+        <span class="product-price">$16.5</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box6-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p9.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Skybags</h2>
+        <span class="product-price">$17.0</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box 7-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p14.jpg" alt="" class="product-img"
+          style="background-color:rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Nike</h2>
+        <span class="product-price">$17.5</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box 8-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="./image/p16.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Adidas</h2>
+        <span class="product-price">$18.0</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer section start-->
+  <footer>
+    <section class="footer" id="contact_us">
+      <div class="box-container">
+        <div class="box">
+          <h3 style="color: rgb(98, 13, 113);">Quick Link</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">products</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3 style="color: rgb(98, 13, 113);">Extra Link</h3>
+          <a href="#">my account</a>
+          <a href="#">my order</a>
+          <a href="#">my favorite</a>
+        </div>
+        <div class="box">
+          <h3 style="color: rgb(98, 13, 113);">Locations</h3>
+          <a href="#">phnom penh</a>
+          <a href="#">kandal</a>
+          <a href="#">kangpong cham</a>
+          <a href="#">seim reap</a>
+        </div>
+        <div class="box">
+          <h3 style="color: rgb(98, 13, 113);">Contact Information</h3>
+          <a href="tel:+962368323">+854-962-368-323</a>
+          <a href="mailto:soksocheata194@gmail.com">soksocheata194@gmail.com</a>
+          <a href="#">koh oknhatey ,island -401234</a><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIXtjCmzBdGkW935eu-opp-6uKZhEGXZyxAA&usqp=CAU"
+            alt="" width="4px">
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Footer section end-->
+
+
+  <!--Link js-->
+  <script src="./e.js"></script>
+</body>
+
+</html>
